@@ -1,5 +1,5 @@
 Name:		klines
-Version:	4.10.4
+Version:	4.10.5
 Release:	1
 Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
@@ -38,6 +38,9 @@ new balls keep arriving by three after each move, filling up the game board.
 %makeinstall_std -C build
 
 %changelog
+* Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.5-1
+- New version 4.10.5
+
 * Wed Jun 05 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.4-1
 - New version 4.10.4
 
