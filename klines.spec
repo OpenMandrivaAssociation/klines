@@ -38,7 +38,7 @@ new balls keep arriving by three after each move, filling up the game board.
 %makeinstall_std -C build
 
 %changelog
-* Tue Jan 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
+* Tue Jan 14 2014 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.12.1-1
 - New version 4.12.1
 
 * Wed Dec 04 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.4-1
