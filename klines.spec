@@ -47,6 +47,7 @@ new balls keep arriving by three after each move, filling up the game board.
 %{_iconsdir}/hicolor/*/apps/klines.png  
 %{_datadir}/kxmlgui5/klines/klinesui.rc
 %{_datadir}/config.kcfg/klines.kcfg   
+%{_datadir}/klines/themes/*
 
 #------------------------------------------------------------------------------
 
