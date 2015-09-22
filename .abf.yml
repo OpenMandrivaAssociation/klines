@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   klines-15.08.0.tar.xz: 0daa0e70ebf6cb58cd96ab405ee11fcbb4f3e3d3
+sources:
+  klines-15.08.1.tar.xz: f96f7bea1df8e3b6beb3091756cc9deda829974e
