@@ -31,6 +31,7 @@ BuildRequires:  cmake(KF5XmlGui)
 BuildRequires:  cmake(KF5KIO)
 BuildRequires:  cmake(KF5NewStuff)
 BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(KF5Crash)
 
 
 %description
