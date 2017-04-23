@@ -1,12 +1,12 @@
 Name:		klines
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=klines
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires: 	cmake(ECM)
 BuildRequires:  cmake(Qt5Widgets)
@@ -42,10 +42,9 @@ into the lines of the same color by five. Once the line is complete it is
 removed from the board, therefore freeing precious space. In the same time the
 new balls keep arriving by three after each move, filling up the game board.
 
-%files
+%files -f %{name}.lang
 %{_bindir}/klines
 %{_datadir}/applications/org.kde.klines.desktop
-%doc %{_docdir}/*/*/klines
 %{_iconsdir}/hicolor/*/apps/klines.png
 %{_datadir}/kxmlgui5/klines/klinesui.rc
 %{_datadir}/config.kcfg/klines.kcfg
@@ -62,5 +61,4 @@ new balls keep arriving by three after each move, filling up the game board.
 
 %install
 %ninja_install -C build
-
-
+%find_lang %{name} --with-html
