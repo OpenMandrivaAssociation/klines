@@ -1,3 +1,5 @@
+%define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
+
 Name:		klines
 Version:	17.04.0
 Release:	1
@@ -6,7 +8,7 @@ Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=klines
-Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires: 	cmake(ECM)
 BuildRequires:  cmake(Qt5Widgets)
