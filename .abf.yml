@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   klines-17.12.1.tar.xz: 93737ca7d4c243cc392ef67e46380e3b07f1adef
+sources:
+  klines-17.12.2.tar.xz: b8f5860a6f293677c77cfa75abd6827d0d512e78
