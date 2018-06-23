@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		klines
-Version:	 17.12.2
+Version:	 18.04.2
 Release:	1
 Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
@@ -9,7 +9,6 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=klines
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
-BuildRequires:	libkdegames-devel
 BuildRequires: 	cmake(ECM)
 BuildRequires:  cmake(Qt5Widgets)
 BuildRequires:  cmake(Qt5Qml)
@@ -50,6 +49,7 @@ new balls keep arriving by three after each move, filling up the game board.
 %{_iconsdir}/hicolor/*/apps/klines.png
 %{_datadir}/config.kcfg/klines.kcfg
 %{_datadir}/klines/themes/*
+%{_datadir}/metainfo/org.kde.klines.appdata.xml
 
 #------------------------------------------------------------------------------
 
