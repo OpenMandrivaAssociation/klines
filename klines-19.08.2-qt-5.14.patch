@@ -1,0 +1,12 @@
+diff -up klines-19.08.2/mwidget.cpp.omv~ klines-19.08.2/mwidget.cpp
+--- klines-19.08.2/mwidget.cpp.omv~	2019-10-15 12:02:17.371249076 +0200
++++ klines-19.08.2/mwidget.cpp	2019-10-15 12:02:23.494272116 +0200
+@@ -39,7 +39,7 @@ MainWidget::MainWidget( QWidget* parent
+     klview->setHorizontalScrollBarPolicy( Qt::ScrollBarAlwaysOff );
+     klview->setFrameStyle(QFrame::NoFrame);
+ 
+-    klview->setOptimizationFlags( QGraphicsView::DontClipPainter |
++    klview->setOptimizationFlags( //QGraphicsView::DontClipPainter |
+                                   QGraphicsView::DontSavePainterState |
+                                   QGraphicsView::DontAdjustForAntialiasing );
+ 

@@ -9,6 +9,7 @@ Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=klines
 Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Patch0:		klines-19.08.2-qt-5.14.patch
 BuildRequires: 	cmake(ECM)
 BuildRequires:  cmake(Qt5Widgets)
 BuildRequires:  cmake(Qt5Qml)
@@ -54,7 +55,7 @@ new balls keep arriving by three after each move, filling up the game board.
 #------------------------------------------------------------------------------
 
 %prep
-%setup -q
+%autosetup -p1
 %cmake_kde5
 
 %build
