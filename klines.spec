@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		klines
-Version:	19.12.3
+Version:	20.03.80
 Release:	1
 Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
@@ -50,6 +50,7 @@ new balls keep arriving by three after each move, filling up the game board.
 %{_datadir}/config.kcfg/klines.kcfg
 %{_datadir}/klines/themes/*
 %{_datadir}/metainfo/org.kde.klines.appdata.xml
+%{_datadir}/qlogging-categories5/klines.categories
 
 #------------------------------------------------------------------------------
 
