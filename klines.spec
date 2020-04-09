@@ -2,7 +2,7 @@
 
 Name:		klines
 Version:	20.03.90
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
 Group:		Graphical desktop/KDE
