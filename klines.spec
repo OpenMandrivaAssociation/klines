@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		klines
-Version:	21.07.80
+Version:	21.07.90
 Release:	1
 Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
