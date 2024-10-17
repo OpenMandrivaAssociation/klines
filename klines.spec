@@ -7,7 +7,7 @@ Epoch:		1
 Summary:	Place 5 equal pieces together, but wait, there are 3 new ones
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=klines
+URL:		https://games.kde.org/game.php?game=klines
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires: 	cmake(ECM)
 BuildRequires:  cmake(Qt5Widgets)
