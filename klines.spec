@@ -4,7 +4,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 
 Name:		klines
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Place 6 equal pieces together, but wait, there are 3 new ones
 Group:		Graphical desktop/KDE
@@ -40,6 +40,10 @@ BuildRequires:  cmake(KF6NewStuff)
 BuildRequires:	cmake(KDEGames6)
 BuildRequires:	cmake(KF6Crash)
 
+%rename plasma6-klines
+
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
 
 %description
 KLines is a simple but highly addictive one player game.
@@ -49,7 +53,7 @@ into the lines of the same color by five. Once the line is complete it is
 removed from the board, therefore freeing precious space. In the same time the
 new balls keep arriving by three after each move, filling up the game board.
 
-%files -f klines.lang
+%files -f %{name}.lang
 %{_bindir}/klines
 %{_datadir}/applications/org.kde.klines.desktop
 %{_iconsdir}/hicolor/*/apps/klines.png
@@ -58,18 +62,3 @@ new balls keep arriving by three after each move, filling up the game board.
 %{_datadir}/metainfo/org.kde.klines.appdata.xml
 %{_datadir}/qlogging-categories6/klines.categories
 %{_datadir}/qlogging-categories6/klines.renamecategories
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n klines-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang klines --with-html
